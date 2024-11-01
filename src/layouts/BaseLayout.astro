@@ -1,0 +1,24 @@
+---
+import SiteHead from '../components/SiteHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+	title?: string;
+	description?: string;
+	slug?: string;
+}
+
+const { title, description, slug } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<SiteHead title={title} description={description} />
+	<body class={slug}>
+		<Header />
+		<slot />
+		<Footer />
+	</body>
+</html>

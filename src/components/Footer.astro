@@ -1,0 +1,50 @@
+---
+const currentYear = new Date().getFullYear();
+---
+<footer>
+  <div class="content-width">
+    <img src="/images/logo.svg" alt="Tricyrcle Corporation">
+    <ul>
+      <li>&copy; {currentYear} Tricyrcle Corp.</li>
+      <li><a href="/privacy">Privacy Policy</a></li>
+      <li><a href="/terms">Terms and Conditions</a></li>
+      <li><a href="/cookies">Cookies Policy</a></li>
+    </ul>
+  </div>
+</footer>
+
+<style>
+  footer {
+    padding-block-start: var(--space-l);
+  }
+
+  footer img {
+    display: block;
+    max-width: 20em;
+    margin-inline: auto;
+    margin-block-end: var(--space-l);
+  }
+
+  footer ul {
+    display: flex;
+    gap: var(--space-m);
+    list-style: none;
+    padding-block-start: var(--space-m);
+    padding-inline: var(--space-m);
+    border-block-start: 1px solid var(--brand-black);
+  }
+
+  @media screen and (max-width: 726px) {
+    footer ul {
+      flex-direction: column;
+    }
+  }
+
+  footer li:first-of-type {
+    margin-right: auto;
+  }
+
+  footer a {
+    padding-block: var(--space-m);
+  }
+</style>

@@ -1,0 +1,376 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <main>
+    <section class="hero">
+      <div class="content-width">
+        <h2>Own Your Digital Identity</h2>
+        <p>Your online activities are tracked. Your habits form a picture of who you are. If you'd rather remain less visible, check out our technology offerings. Our goal is simple: affordable privacy.</p>
+      </div>
+    </section>
+
+    <section id="products" class="products">
+      <div class="content-width">
+        <h2>Products</h2>
+        <div class="product-images">
+          <img
+            srcset="/images/screenshot.png, /images/screenshot@2x.png 2x"
+            src="/images/screenshot.png"
+            alt="Screenshot of CantinaVPN mobile app" />
+          <a href="https://play.google.com/store/apps/details?id=org.vpn&hl=en&pli=1">
+            <img class="badge-store" src="/images/google-store.svg" alt="Download on Google Play Store">
+          </a>
+          <a href="https://apps.apple.com/us/app/cantinavpn/id1610883564">
+            <img class="badge-store" src="/images/app-store.svg" alt="Download on Apple App Store">
+          </a>
+        </div>
+  
+        <div class="product-pricing">
+          <h3>Super Simple Mobile VPN Service</h3>
+          <p>CantinaVPN is available from the Android and iOS app stores. The first month is free, and then the monthly subscription fee is only $1.99/month. Cancel before the first month ends to pay nothing.</p>
+          <div class="pricing-subscription">
+            <p>Monthly Subscription</p>
+            <p>$1.99</p>
+            <p>per month</p>
+            <ul>
+              <li>No registration, no login. You remain anonymous.</li>
+              <li>First month free. Cancel at any time.</li>
+              <li>Select from several countries to route your VPN traffic.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="personal-info">
+      <div class="content-width">
+        <div class="info-privacy">
+          <div>
+            <p>Do we need to collect any personal information from you?</p>
+            <p>No. If you are of legal adult age and can abide by our terms of use, then we protect your anonymity as described in our privacy policy.</p>
+          </div>
+          <a href="mailto:support@tricyrcle.com" class="btn">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+      <section class="affordable-privacy">
+        <div class="content-width">
+          <div>
+            <h3>Affordable Privacy</h3>
+            <p>CantinaVPN is a mobile VPN service that offers subscribers real value, in line with the three pillars or our company: simplicity, privacy and affordability.</p>
+            <a href="https://play.google.com/store/apps/details?id=org.vpn&hl=en&pli=1">
+              <img class="badge-store" src="/images/google-store.svg" alt="Download on Google Play Store">
+            </a>
+            <a href="https://apps.apple.com/us/app/cantinavpn/id1610883564">
+              <img class="badge-store" src="/images/app-store.svg" alt="Download on Apple App Store">
+            </a>
+          </div>
+          <ol>
+            <li>
+              <h4>Step 1: Download the app</h4>
+              <p>It runs on Android and iOS</p>
+            </li>
+            <li>
+              <h4>Step 2: Subscribe</h4>
+              <p>If you cancel before the first month ends you pay nothing. Thereafter you pay $1.99/month and you can cancel at any time.</p>
+            </li>
+            <li>
+              <h4>Step 3: Start Using</h4>
+              <p>Toggle the on/off switch. It's that simple!</p>
+            </li>
+            <li>
+              <h4>Step 4: Enjoy!</h4>
+              <p>Turn on any time to protect your web activity privacy.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+  
+    <section class="cantina-vpn">
+      <div class="content-width">
+        <img src="/images/cantina-logo.png" alt="CantinaVPN">
+        <ul>
+          <li>
+            <h4>Simplicity</h4>
+            <p>Toggle the app on/off switch. It's that simple.</p>
+          </li>
+          <li>
+            <h4>Privacy</h4>
+            <p>No user registration. No need to share your identity.</p>
+          </li>
+          <li>
+            <h4>Affordability</h4>
+            <p>Incredible value -- only $1.99/month.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="content-width">
+        <h2>About Us</h2>
+        <p>Our team works remotely from within the USA. If you have questions or need help, send us an email: <a href="mailto:support@tricyrcle.com">support@tricyrcle.com</a>.</p>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+	.hero {
+		padding-block: var(--space-l);
+		text-align: center;
+	}
+
+	.hero h2 {
+		font-size: var(--step-5);
+		margin-block-end: var(--space-m);
+	}
+
+	.products h2 {
+		font-size: var(--step-3);
+		margin-block-end: var(--space-m);
+		color: var(--brand-orange);
+		text-align: center;
+	}
+
+	.product-images {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: var(--space-s);
+		margin-block-end: var(--space-xl);
+	}
+
+	@media screen and (max-width: 725px) {
+		.product-images {
+			flex-direction: column;
+		}
+	}
+
+	.badge-store {
+		max-width: 10em;
+	}
+
+	.product-pricing {
+		text-align: center;
+	}
+
+	.product-pricing h3 {
+		font-size: var(--step-2);
+		margin-block-end: var(--space-s);
+	}
+
+	.product-pricing h3 + p {
+		margin-block-end: var(--space-l);
+	}
+
+	.pricing-subscription {
+		border-radius: var(--border-radius);
+		border: 1px solid var(--brand-black);
+		padding: var(--space-m);
+		margin-block-end: var(--space-xl);
+	}
+
+	.pricing-subscription p:first-of-type {
+		font-weight: bold;
+		margin-block-end: var(--space-2xs);
+	}
+
+	.pricing-subscription p:nth-of-type(2) {
+		font-weight: bold;
+		font-size: var(--step-4);
+		margin-block-end: var(--space-2xs);
+	}
+
+	.pricing-subscription p:nth-of-type(3) {
+		margin-block-end: var(--space-m);
+	}
+
+	.pricing-subscription ul {
+		list-style: none;
+	}
+
+	.pricing-subscription li {
+		display: flex;
+		align-items: center;
+		gap: var(--space-2xs);
+		margin-block-end: var(--space-s);
+		max-width: max-content;
+		margin-inline: auto;
+	}
+
+	.pricing-subscription li::before {
+		content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 78.369 78.369"><path d="M78.049 19.015 29.458 67.606a1.094 1.094 0 0 1-1.548 0L.32 40.015a1.094 1.094 0 0 1 0-1.547l6.704-6.704a1.095 1.095 0 0 1 1.548 0l20.113 20.112 41.113-41.113a1.095 1.095 0 0 1 1.548 0l6.703 6.704a1.094 1.094 0 0 1 0 1.548z"/></svg>');
+		width: 1em;
+		height: 1em;
+		display: inline;
+	}
+
+	.personal-info {
+		background-color: var(--brand-gray);
+		padding-block: var(--space-xl);
+	}
+
+	.info-privacy {
+		border-radius: var(--border-radius);
+		background-color: #a4a3a3;
+		padding: var(--space-3xl) var(--space-xl);
+		position: relative;
+		z-index: 1;
+		transform: rotate(2deg);
+		display: flex;
+		align-items: center;
+		gap: var(--space-l);
+	}
+
+	@media screen and (max-width: 725px) {
+		.info-privacy {
+			flex-direction: column;
+		}
+	}
+
+	.info-privacy::before {
+		display: block;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: var(--brand-cyan);
+		transform: rotate(-2deg);
+		border-radius: var(--border-radius);
+		z-index: -1;
+	}
+
+	.info-privacy > div {
+		transform: rotate(-2deg);
+	}
+
+	.info-privacy p:first-of-type {
+		font-size: var(--step-2);
+		font-weight: bold;
+		margin-block-end: var(--space-s);
+	}
+
+	.affordable-privacy {
+		padding-block: var(--space-xl);
+	}
+
+	.affordable-privacy > div {
+		display: flex;
+		gap: var(--space-xl);
+	}
+
+	@media screen and (max-width: 959px) {
+		.affordable-privacy > div {
+			flex-direction: column;
+		}
+	}
+
+	.affordable-privacy h3 {
+		font-size: var(--step-2);
+		margin-block-end: var(--space-s);
+	}
+
+	.affordable-privacy h3 + p {
+		margin-block-end: var(--space-l);
+	}
+
+	.affordable-privacy ol {
+		list-style: none;
+	}
+
+	.affordable-privacy li {
+		padding: var(--space-xl);
+		margin-block-end: var(--space-m);
+		border-radius: var(--border-radius);
+		counter-increment: section;
+		position: relative;
+	}
+
+	.affordable-privacy li::after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		content: "0" counter(section);
+		padding: var(--space-s);
+		font-size: var(--step-3);
+		font-weight: bold;
+	}
+
+	.affordable-privacy li:nth-of-type(3n - 2) {
+		background-color: var(--brand-cyan);
+	}
+
+	.affordable-privacy li:nth-of-type(2) {
+		background-color: var(--brand-chartreuse);
+	}
+
+	.affordable-privacy li:nth-of-type(3) {
+		background-color: var(--brand-orange);
+	}
+
+	.affordable-privacy li h4 {
+		font-size: var(--step-2);
+		margin-block-end: var(--space-s);
+	}
+
+	@media screen and (min-width: 940px) {
+		.affordable-privacy li h4 {
+			white-space: nowrap;
+		}
+
+		.affordable-privacy li:nth-of-type(odd) {
+			transform: rotate(-2deg);
+		}
+
+		.affordable-privacy li:nth-of-type(even) {
+			transform: rotate(2deg);
+		}
+	}
+
+	.affordable-privacy li p {
+		font-size: var(--step--1);
+		text-align: center;
+	}
+
+	.cantina-vpn {
+		margin-block-end: var(--space-2xl);
+	}
+
+	.cantina-vpn > div {
+		display: flex;
+		gap: var(--space-xl);
+		align-items: start;
+		justify-content: space-around;
+	}
+
+	@media screen and (max-width: 800px) {
+		.cantina-vpn > div {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	.cantina-vpn ul {
+		list-style: none;
+	}
+
+	.cantina-vpn li {
+		margin-block-end: var(--space-l);
+	}
+
+	.cantina-vpn h4 {
+		font-size: var(--step-2);
+		margin-block-end: var(--space-xs);
+	}
+
+	.about h2 {
+		font-size: var(--step-3);
+		margin-block-end: var(--space-s);
+	}
+</style>

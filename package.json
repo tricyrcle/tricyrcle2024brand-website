@@ -1,39 +1,15 @@
 {
-  "name": "blank-html5",
-  "version": "1.0.0",
-  "description": "Blank HTML5 template for experiments",
-  "main": "gulpfile.babel.js",
+  "name": "tricyrcle",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "author": "Chen Hui Jing",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
-    "@babel/register": "^7.25.9",
-    "@selfisekai/gulp-sass": "^4.2.0",
-    "autoprefixer": "^10.4.20",
-    "browser-sync": "^3.0.3",
-    "cssnano": "^7.0.6",
-    "gulp": "^5.0.0",
-    "gulp-babel": "^8.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-postcss": "^10.0.0",
-    "gulp-uglify": "^3.0.2",
-    "postcss": "^8.4.47",
-    "sass": "^1.80.5"
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
-  },
-  "browserslist": [
-    "defaults"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/huijing/blank-html5.git"
+  "dependencies": {
+    "astro": "^4.16.8"
   }
 }

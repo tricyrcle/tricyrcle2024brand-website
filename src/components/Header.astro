@@ -1,0 +1,48 @@
+---
+---
+<header>
+  <div class="content-width">
+    <img src="/images/logo-stacked.svg" alt="Tricyrcle Corporation">
+    <nav>
+      <a href="/">home</a>
+      <a href="#products">products</a>
+      <a href="#about">about</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  header div {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xl);
+    padding-block: var(--space-m);
+  }
+
+  @media screen and (max-width: 440px) {
+    header div {
+      flex-direction: column;
+      gap: var(--space-m);
+    }
+  }
+
+  @media screen and (max-width: 1140px) {
+    header div {
+      padding-inline: var(--space-l);
+    }
+
+    section div {
+      padding-inline: var(--space-l);
+    }
+  }
+
+  header img {
+    max-width: 6em;
+  }
+
+  header nav {
+    display: flex;
+    gap: var(--space-m);
+    font-weight: bold;
+  }
+</style>

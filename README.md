@@ -1,23 +1,43 @@
-# A blank HTML5 template for experiments
+# Tricyrcle Corporation website
 
-1. Clone this repo to your local computer:
+Our goal is to rethink and rebuild popular information technology products in order to provide stronger value to consumers, by focusing on these areas:
 
-```shell
-$ git clone git@github.com:huijing/blank-html5.git
+- Protection of user privacy
+- Global affordability
+- Simple, fun, human-friendly design
+
+## Source code setup
+
+This site is built with Astro. Inside of your Astro project, you'll see the following folders and files:
+
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
 ```
 
-2. Install the necessary packages for this repo:
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-```shell
-$ npm install
-```
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-3. Run **Gulp** to concatenate and compile files:
+Any static assets, like images, can be placed in the `public/` directory.
 
-```shell
-$ gulp
-```
+### Commands
 
-- Global gulp command line utility is required via `npm install --global gulp-cli`
-- Styles go in the `styles.scss` file, and will be compiled by Gulp
-- Scripts go into the js folder, and will be concatenated by Gulp
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+### Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

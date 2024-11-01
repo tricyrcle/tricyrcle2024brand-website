@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="404">
+  <main>
+    <section>
+      <div class="content-width">
+        <h1>404 – Page not found</h1>
+        <p>Oh no, the page you're trying to get to doesn't exist.</p>
+        <p>You should visit our <a href="/">home page</a> instead.</p>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  main {
+    text-align: center;
+  }
+
+  h1 {
+    margin-block-end: var(--space-s);
+  }
+
+  p {
+    margin-block-end: var(--space-s);
+  }
+
+  a {
+    text-decoration: underline;
+  }
+</style>

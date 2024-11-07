@@ -36,6 +36,7 @@
     segoe ui, arial, sans-serif;
   --brand-cyan: oklch(70.8% 0.1488 234.36);
   --brand-orange: oklch(75.5% 0.1445 83.5);
+  --brand-orange-bg: oklch(75.5% 0.1445 83.5 / 49.78%);
   --brand-chartreuse: oklch(79.47% 0.1596 109.94);
   --brand-black: oklch(0% 0 0);
   --brand-gray: oklch(88.53% 0 0);

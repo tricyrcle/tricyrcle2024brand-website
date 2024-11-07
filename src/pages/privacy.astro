@@ -3,10 +3,92 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 <BaseLayout title="Privacy Policy">
   <main>
-    <section>
-      <div class="content-width">
-        <h1>Privacy Policy</h1>
-      </div>
+    <section class="content-width">
+      <h1>Privacy Policy</h1>   
+      <p>Last updated: 10 September 2021</p>
+    </section>
+    <section class="content-width">
+      <h2>1. What we do</h2>
+      <p>We – Tricyrcle Corporation – offer products and services (“Services”) using technologies that enable you to achieve greater online privacy (at an affordable price).</p>
+      <p>Our CantinaVPN mobile application is available for download from the Google and Apple smartphone app stores. When the application Virtual Private Network (VPN) service is “on” it will establish a secure “tunnel” that routes all your online traffic through a server hosted by a third-party. The third-party server would be one of among tens of thousands that make up a global, community-driven, internet relay network. The established tunnel secures and encrypts your connections to the internet via the third-party server. Therefore all your Internet traffic will appear to come from the internet protocol (“IP”) address of that third-party server.</p>
+      <p>The secure and encrypted CantinaVPN tunnel provides greater online privacy and prevents eavesdropping by strangers (or even family and friends) who are using the same local network.</p>
+    </section>
+
+        
+    <section class="content-width">
+        <h2>2. Why we collect data</h2>
+        <p>Our goal at Tricyrcle is to collect only the minimum data needed to administer and enable your use of this site (<a href="https://www.tricyrcle.com">https://www.tricyrcle.com</a>) (the “Site”), and your use of our Services, including the CantinaVPN mobile application.</p>
+      </section>
+        <section class="content-width">
+        <h2>3. Summary of our data collection and use</h2>
+        <h3>Data You Provide</h3>
+        <h4>Categories of Data and Personal Data Collected</h4>
+        <p><strong>User Data may include:</strong> Your email address, which will be shared with us if you request support over email. CantinaVPN does not require Users to create an account, so no personal information is required to use our Services. However, data may be collected by third-parties when you download the CantinaVPN mobile application, when you activate the VPN tunnel using the third-party server, or when you pay for a CantinaVPN service plan.</p>
+        <h4>Purpose of Processing Your Personal Data</h4>
+        <p>If you contact Tricyrcle over email, we keep the correspondence for quality and follow-up reasons, but we won’t share your email nor correspondence content with third-parties without your consent.</p>
+        <h3>Data We Collect/Access</h3>
+        <h4>Categories of Data and Personal Data Collected</h4>
+        <p><strong>User Data may include:</strong> Smartphone IP address, Smartphone MAC address, Aggregate bandwidth usage (limited to the number of bytes transferred using the service).<br><strong>Administrative Data may include:</strong> Device name and type, Smartphone OS version,Version of CantinaVPN application.<br><strong>Security Data may include:</strong> Public key used to set up encrypted tunnel.<br><strong>Diagnostic Data may include:</strong> Usage data to assist with debugging a problem with the service, Error state in installation/usage of the app.</p>
+        <h4>Purpose of Processing Your Personal Data</h4>
+        <p><strong>User Data:</strong> This data is processed for the purposes of setting up the VPN tunnel and for determining how much data has been transferred over it.<br><strong>Administrative Data:</strong> This data may be processed for the purpose of providing user support.<br><strong>Security Data:</strong> This data is processed to set up the VPN tunnel between your mobile device and the third-party server.<br><strong>Diagnostic Data:</strong> This data is used for the purpose of delivering the best user experience by selecting the most appropriate exit node, for research and development to improve the service, for user support, and to better protect your network, devices, data, and identity.</p>
+        <h3>Data We Collect/Access from Third Parties</h3>
+        <h4>Categories of Data and Personal Data Collected</h4>
+        <p><strong>Diagnostic Data may include:</strong> Reporting metadata on product and application usage.<br><strong>Billing Data may include:</strong> Personally identifying information used by billing platform partners to provide a payment API token to use the Service.</p>
+        <h4>Purpose of Processing Your Personal Data</h4>
+        <p><strong>Diagnostic Data:</strong> This data is used for the purpose of understanding the product usage to further develop and improve the product performance and its telemetry.<br><strong>Billing Data:</strong> This data will normally be processed only by billing partners but may need to be temporarily accessible to Tricyrcle in order to handle support issues.</p>
+      </section>
+      <section class="content-width">
+        <h2>4. Third party data collection</h2>
+        <p>This Privacy Policy does not address, and we are not responsible for, the privacy practices of any third parties, including those through which you download our Services (for example, the Apple App Store or the Google Play Store) or which host or provide software to run on the internet relay servers.</p>
+      </section>
+      <section class="content-width">
+        <h2>5. Children’s information</h2>
+        <p>The Site and Services are not directed to individuals under the age of 18 (or other age as required by local law), and we do not knowingly collect personal information from anyone under 18 years of age. If you learn that your child has downloaded the CantinaVPN application, you should uninstall it. If your child has provided us with personal information without your consent, you may contact us so that we can do our best to delete such information.</p>
+      </section>
+      <section class="content-width">
+        <h2>6. Information from outside of the United States</h2>
+        <p>If you access the Site and/or Services from outside of the United States, information that we collect about you or your device may be transferred to servers inside the United States, which may involve the transfer of information out of your country of origin. By allowing us to collect information about you, you consent to such transfer and processing of your data.</p>
+        <p>You may ask Tricyrcle to delete any personal information stored about you, if such information has been made available to us.</p>
+      </section>
+      <section class="content-width">
+        <h2>7. Changes to our Privacy Policy</h2>
+        <p>We may revise this Privacy Policy from time to time in our sole discretion. You understand and agree that you will be deemed to have accepted the updated Privacy Policy if you continue to use the Services after the new Privacy Policy takes effect.</p>
+      </section>
+      <section class="content-width">
+        <h2>8. Contact Information</h2>
+        <p>If you have any questions about our privacy practices or this Privacy Policy, please contact us at <a href="mailto:support@tricyrcle.com">support@tricyrcle.com</a> or Tricyrcle Corp, c/o Corporation Service Company, 251 Little Falls Drive, Wilmington, DE 19808.</p>
     </section>
   </main>
 </BaseLayout>
+
+<style>
+  h1 {
+    font-size: var(--step-3);
+  }
+  h2 {
+    font-size: var(--step-2);
+    margin-block-end: var(--space-xs);
+  }
+  
+  h3,
+  h4 {
+    margin-block-end: var(--space-3xs);
+  }
+
+  h3 {
+    font-size: var(--step-2);
+    font-weight: normal;
+  }
+
+  h4 {
+    font-size: var(--step-1);
+  }
+
+  p {
+    margin-block-end: var(--space-xs);
+  }
+
+  a {
+    text-decoration: underline;
+  }
+</style>

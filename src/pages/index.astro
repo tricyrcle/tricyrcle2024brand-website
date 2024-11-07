@@ -14,33 +14,37 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <section id="products" class="products">
       <div class="content-width">
         <h2>Products</h2>
-        <div class="product-images">
-          <img
-            srcset="/images/screenshot.png, /images/screenshot@2x.png 2x"
-            src="/images/screenshot.png"
-            alt="Screenshot of CantinaVPN mobile app" />
-          <a href="https://play.google.com/store/apps/details?id=org.vpn&hl=en&pli=1">
-            <img class="badge-store" src="/images/google-store.svg" alt="Download on Google Play Store">
-          </a>
-          <a href="https://apps.apple.com/us/app/cantinavpn/id1610883564">
-            <img class="badge-store" src="/images/app-store.svg" alt="Download on Apple App Store">
-          </a>
-        </div>
-  
-        <div class="product-pricing">
-          <h3>Super Simple Mobile VPN Service</h3>
-          <p>CantinaVPN is available from the Android and iOS app stores. The first month is free, and then the monthly subscription fee is only $1.99/month. Cancel before the first month ends to pay nothing.</p>
-          <div class="pricing-subscription">
-            <p>Monthly Subscription</p>
-            <p>$1.99</p>
-            <p>per month</p>
-            <ul>
-              <li>No registration, no login. You remain anonymous.</li>
-              <li>First month free. Cancel at any time.</li>
-              <li>Select from several countries to route your VPN traffic.</li>
-            </ul>
-          </div>
-        </div>
+				<div class="product__cantinavpn">
+					<div class="product-images">
+						<img
+							srcset="/images/screenshot.png, /images/screenshot@2x.png 2x"
+							src="/images/screenshot.png"
+							alt="Screenshot of CantinaVPN mobile app" />
+						<div class="badges">
+							<a href="https://play.google.com/store/apps/details?id=org.vpn&hl=en&pli=1">
+								<img class="badge-store" src="/images/google-store.svg" alt="Download on Google Play Store">
+							</a>
+							<a href="https://apps.apple.com/us/app/cantinavpn/id1610883564">
+								<img class="badge-store" src="/images/app-store.svg" alt="Download on Apple App Store">
+							</a>
+						</div>
+					</div>
+		
+					<div class="product-description">
+						<h3>Super Simple Mobile VPN Service</h3>
+						<p>CantinaVPN is available from the Android and iOS app stores. The first month is free, and then the monthly subscription fee is only $1.99/month. Cancel before the first month ends to pay nothing.</p>
+						<div class="pricing-subscription">
+							<p>Monthly Subscription</p>
+							<p>$1.99</p>
+							<p>per month</p>
+							<ul>
+								<li>No registration, no login. You remain anonymous.</li>
+								<li>First month free. Cancel at any time.</li>
+								<li>Select from several countries to route your VPN traffic.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
       </div>
     </section>
 
@@ -56,59 +60,61 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
     </section>
 
-      <section class="affordable-privacy">
-        <div class="content-width">
-          <div>
-            <h3>Affordable Privacy</h3>
-            <p>CantinaVPN is a mobile VPN service that offers subscribers real value, in line with the three pillars or our company: simplicity, privacy and affordability.</p>
-            <a href="https://play.google.com/store/apps/details?id=org.vpn&hl=en&pli=1">
-              <img class="badge-store" src="/images/google-store.svg" alt="Download on Google Play Store">
-            </a>
-            <a href="https://apps.apple.com/us/app/cantinavpn/id1610883564">
-              <img class="badge-store" src="/images/app-store.svg" alt="Download on Apple App Store">
-            </a>
-          </div>
-          <ol>
-            <li>
-              <h4>Step 1: Download the app</h4>
-              <p>It runs on Android and iOS</p>
-            </li>
-            <li>
-              <h4>Step 2: Subscribe</h4>
-              <p>If you cancel before the first month ends you pay nothing. Thereafter you pay $1.99/month and you can cancel at any time.</p>
-            </li>
-            <li>
-              <h4>Step 3: Start Using</h4>
-              <p>Toggle the on/off switch. It's that simple!</p>
-            </li>
-            <li>
-              <h4>Step 4: Enjoy!</h4>
-              <p>Turn on any time to protect your web activity privacy.</p>
-            </li>
-          </ol>
-        </div>
-      </section>
-  
-    <section class="cantina-vpn">
-      <div class="content-width">
-        <img src="/images/cantina-logo.png" alt="CantinaVPN">
-        <ul>
-          <li>
-            <h4>Simplicity</h4>
-            <p>Toggle the app on/off switch. It's that simple.</p>
-          </li>
-          <li>
-            <h4>Privacy</h4>
-            <p>No user registration. No need to share your identity.</p>
-          </li>
-          <li>
-            <h4>Affordability</h4>
-            <p>Incredible value -- only $1.99/month.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
+		<section class="affordable-privacy">
+			<div class="content-width">
+				<div class="cantina-vpn">
+					<div class="product-images">
+						<img src="/images/cantina-logo.png" alt="CantinaVPN">
+						<div class="badges">
+							<a href="https://play.google.com/store/apps/details?id=org.vpn&hl=en&pli=1">
+								<img class="badge-store" src="/images/google-store.svg" alt="Download on Google Play Store">
+							</a>
+							<a href="https://apps.apple.com/us/app/cantinavpn/id1610883564">
+								<img class="badge-store" src="/images/app-store.svg" alt="Download on Apple App Store">
+							</a>
+						</div>
+					</div>
+					
 
+					<h3>Affordable Privacy</h3>
+					<p>CantinaVPN is a mobile VPN service that offers subscribers real value, in line with the three pillars or our company: simplicity, privacy and affordability.</p>
+					<ul>
+						<li>
+							<h4>Simplicity</h4>
+							<p>Toggle the app on/off switch. It's that simple.</p>
+						</li>
+						<li>
+							<h4>Privacy</h4>
+							<p>No user registration. No need to share your identity.</p>
+						</li>
+						<li>
+							<h4>Affordability</h4>
+							<p>Incredible value -- only $1.99/month.</p>
+						</li>
+					</ul>
+				</div>
+
+				<ol class="get-started">
+					<li>
+						<h4>Step 1: Download the app</h4>
+						<p>It runs on Android and iOS</p>
+					</li>
+					<li>
+						<h4>Step 2: Subscribe</h4>
+						<p>If you cancel before the first month ends you pay nothing. Thereafter you pay $1.99/month and you can cancel at any time.</p>
+					</li>
+					<li>
+						<h4>Step 3: Start Using</h4>
+						<p>Toggle the on/off switch. It's that simple!</p>
+					</li>
+					<li>
+						<h4>Step 4: Enjoy!</h4>
+						<p>Turn on any time to protect your web activity privacy.</p>
+					</li>
+				</ol>
+			</div>
+		</section>
+  
     <section class="about" id="about">
       <div class="content-width">
         <h2>About Us</h2>
@@ -120,8 +126,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <style>
 	.hero {
-		padding-block: var(--space-l);
+		padding-block: var(--space-2xl);
 		text-align: center;
+		background-color: var(--brand-orange-bg);
 	}
 
 	.hero h2 {
@@ -138,32 +145,43 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 	.product-images {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
-		justify-content: center;
-		gap: var(--space-s);
+		gap: var(--space-xs);
 		margin-block-end: var(--space-xl);
 	}
 
-	@media screen and (max-width: 725px) {
-		.product-images {
-			flex-direction: column;
+	.product-images > img {
+		margin-block-end: var(--space-s);
+	}
+
+	@media screen and (min-width: 730px) {
+		.product__cantinavpn {
+			display: flex;
+			gap: var(--space-l);
+			text-align: center;
 		}
+
+		.product-images {
+			flex: none;
+			margin-block-end: var(--space-xl);
+		}
+	}
+
+	.badges {
+		text-align: center;
 	}
 
 	.badge-store {
 		max-width: 10em;
 	}
 
-	.product-pricing {
-		text-align: center;
-	}
-
-	.product-pricing h3 {
+	.product-description h3 {
 		font-size: var(--step-2);
 		margin-block-end: var(--space-s);
 	}
 
-	.product-pricing h3 + p {
+	.product-description h3 + p {
 		margin-block-end: var(--space-l);
 	}
 
@@ -265,7 +283,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		gap: var(--space-xl);
 	}
 
-	@media screen and (max-width: 959px) {
+	@media screen and (max-width: 879px) {
 		.affordable-privacy > div {
 			flex-direction: column;
 		}
@@ -280,82 +298,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		margin-block-end: var(--space-l);
 	}
 
-	.affordable-privacy ol {
-		list-style: none;
-	}
-
-	.affordable-privacy li {
-		padding: var(--space-xl);
-		margin-block-end: var(--space-m);
-		border-radius: var(--border-radius);
-		counter-increment: section;
-		position: relative;
-	}
-
-	.affordable-privacy li::after {
-		position: absolute;
-		top: 0;
-		right: 0;
-		content: "0" counter(section);
-		padding: var(--space-s);
-		font-size: var(--step-3);
-		font-weight: bold;
-	}
-
-	.affordable-privacy li:nth-of-type(3n - 2) {
-		background-color: var(--brand-cyan);
-	}
-
-	.affordable-privacy li:nth-of-type(2) {
-		background-color: var(--brand-chartreuse);
-	}
-
-	.affordable-privacy li:nth-of-type(3) {
-		background-color: var(--brand-orange);
-	}
-
-	.affordable-privacy li h4 {
-		font-size: var(--step-2);
-		margin-block-end: var(--space-s);
-	}
-
-	@media screen and (min-width: 940px) {
-		.affordable-privacy li h4 {
-			white-space: nowrap;
-		}
-
-		.affordable-privacy li:nth-of-type(odd) {
-			transform: rotate(-2deg);
-		}
-
-		.affordable-privacy li:nth-of-type(even) {
-			transform: rotate(2deg);
-		}
-	}
-
-	.affordable-privacy li p {
-		font-size: var(--step--1);
-		text-align: center;
-	}
-
-	.cantina-vpn {
-		margin-block-end: var(--space-2xl);
-	}
-
-	.cantina-vpn > div {
-		display: flex;
-		gap: var(--space-xl);
-		align-items: start;
-		justify-content: space-around;
-	}
-
-	@media screen and (max-width: 800px) {
-		.cantina-vpn > div {
-			flex-direction: column;
-			align-items: center;
-		}
-	}
-
 	.cantina-vpn ul {
 		list-style: none;
 	}
@@ -367,6 +309,64 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 	.cantina-vpn h4 {
 		font-size: var(--step-2);
 		margin-block-end: var(--space-xs);
+	}
+
+	.get-started {
+		list-style: none;
+	}
+
+	.get-started li {
+		padding: var(--space-xl);
+		margin-block-end: var(--space-m);
+		border-radius: var(--border-radius);
+		counter-increment: section;
+		position: relative;
+	}
+
+	.get-started li::after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		content: "0" counter(section);
+		padding: var(--space-s);
+		font-size: var(--step-3);
+		font-weight: bold;
+	}
+
+	.get-started li:nth-of-type(3n - 2) {
+		background-color: var(--brand-cyan);
+	}
+
+	.get-started li:nth-of-type(2) {
+		background-color: var(--brand-chartreuse);
+	}
+
+	.get-started li:nth-of-type(3) {
+		background-color: var(--brand-orange);
+	}
+
+	.get-started li h4 {
+		font-size: var(--step-2);
+		margin-block-end: var(--space-s);
+	}
+
+	@media screen and (min-width: 880px) {
+		.get-started li h4 {
+			white-space: nowrap;
+		}
+
+		.get-started li:nth-of-type(odd) {
+			transform: rotate(-2deg);
+		}
+
+		.get-started li:nth-of-type(even) {
+			transform: rotate(2deg);
+		}
+	}
+
+	.get-started li p {
+		font-size: var(--step--1);
+		text-align: center;
 	}
 
 	.about h2 {
